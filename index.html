@@ -3,9 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <title>そらまめのホームページ</title>
+    <style>
+        /* 画面全体のスタイルとアニメーションの設定 */
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            /* 鮮やかな色の組み合わせ（ここで色を変更できます） */
+            background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+            background-size: 400% 400%;
+            animation: gradientBG 10s ease infinite;
+            color: #ffffff; /* 文字色を白にして見やすくする */
+            font-family: sans-serif;
+        }
+
+        /* 背景がグニャグニャ動く動きの仕組み */
+        @keyframes gradientBG {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+    </style>
 </head>
 <body>
-    <h1 style="text-align: center; font-size: 40px;">そらまめのホームページへようこそ！</h1>
-    <p style="text-align: center; font-size: 35px;">ここからどんどん楽しいものを置いていくよ！</p>
+    <h1 style="text-align: center;">そらまめのホームページへようこそ！</h1>
+    <p style="text-align: center;">ここからどんどん楽しいものを置いていくよ！</p>
 </body>
 </html>

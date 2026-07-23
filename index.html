@@ -9,9 +9,9 @@
             min-height: 100vh;
             display: flex;
             flex-direction: column;
-            justify-content: flex-start; /* 上側にそろえる */
+            justify-content: flex-start;
             align-items: center;
-            padding-top: 50px; /* 上からのすきまをあける */
+            padding-top: 60px;
             background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
             background-size: 400% 400%;
             animation: gradientBG 10s ease infinite;
@@ -30,10 +30,36 @@
                 background-position: 0% 50%;
             }
         }
+
+        /* TikTokボタンのデザイン */
+        .tiktok-btn {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 12px 28px;
+            background-color: rgba(0, 0, 0, 0.6); /* 黒っぽいガラス風 */
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 16px;
+            border-radius: 30px; /* 角を丸くして可愛いボタンにする */
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            transition: 0.3s;
+        }
+
+        /* ボタンを押す手前でふんわり光る演出 */
+        .tiktok-btn:hover {
+            background-color: #000000;
+            border-color: #ffffff;
+            transform: scale(1.05);
+        }
     </style>
 </head>
 <body>
     <h1 style="text-align: center;">そらまめのホームページへようこそ！</h1>
     <p style="text-align: center;">ここからどんどん楽しいものを置いていくよ！</p>
+
+    <!-- TikTokボタン（https://www.tiktok.com/@あなたのID の部分を自分のアカウントのURLに変えてね！） -->
+    <a href="www.tiktok.com/@soramame.555"class="tiktok-btn" target="_blank">TikTokを見る</a>
 </body>
 </html>

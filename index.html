@@ -6,11 +6,12 @@
     <style>
         body {
             margin: 0;
-            height: 100vh;
+            min-height: 100vh;
             display: flex;
             flex-direction: column;
-            justify-content: center;
+            justify-content: flex-start; /* 上側にそろえる */
             align-items: center;
+            padding-top: 50px; /* 上からのすきまをあける */
             background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
             background-size: 400% 400%;
             animation: gradientBG 10s ease infinite;
